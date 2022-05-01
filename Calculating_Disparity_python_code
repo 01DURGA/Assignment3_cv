@@ -1,0 +1,25 @@
+# Assignment3_cv
+#assignment3_disparity
+import numpy as np 
+import sys 
+import cv2 
+from matplotlib import pyplot as plt 
+%matplotlib inline
+import cv2
+
+path1 = r'C:\\Users\\yyyy\\Desktop\\du1_left.png'
+
+imgL = cv2.imread(path1,0)
+# path
+path2 = r'C:\\Users\\yyyy\\Desktop\\du1_right.png'
+# Using cv2.imread() method
+imgR = cv2.imread(path2,0)
+
+stereo = cv2.StereoBM_create(numDisparities=16, blockSize=5) 
+disparity = stereo.compute(imgL,imgR) 
+#print(disparity)
+D= 0.12*0.70*672/disparity 
+print("disparity",disparity) 
+print("Depth",D) 
+plt.imshow(disparity,'gray') 
+plt.show()
