@@ -1,4 +1,4 @@
-# Assignment3_cv
+# Computer vision _ real time face tracking and lip detection
 
 This repo contains the projects related to :
 1) calculating Disparity - Calculating disparity in a Python computer vision project involves determining the horizontal shift of corresponding points between stereo image pairs captured by left and right cameras. The process includes rectifying the images, matching pixels using stereo algorithms, measuring the horizontal shift, and creating a disparity map. This map represents the relative depth of objects, with brighter regions indicating closer objects and darker regions indicating farther objects. Disparity calculation is crucial for applications like 3D scene reconstruction, object detection, and scene understanding in fields such as robotics, autonomous driving, and augmented reality. It provides valuable insights into the scene's spatial layout, enabling advanced computer vision tasks and applications.
